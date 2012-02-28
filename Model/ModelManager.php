@@ -434,4 +434,26 @@ class ModelManager implements ModelManagerInterface
     {
         return preg_replace(array('/(^|_)+(.)/e', '/\.(.)/e'), array("strtoupper('\\2')", "'_'.strtoupper('\\1')"), $property);
     }
+
+    /**
+     * @param \Sonata\AdminBundle\Datagrid\DatagridInterface $datagrid
+     * @param array                                          $fields
+     * @param null                                           $firstResult
+     * @param null                                           $maxResult
+     *
+     * @return void
+     */
+    function getDataSourceIterator(DatagridInterface $datagrid, array $fields, $firstResult = null, $maxResult = null)
+    {
+        // TODO: Implement getDataSourceIterator() method.
+    }
+
+    /**
+     * @param $class
+     * @return array
+     */
+    function getExportFields($class)
+    {
+        // TODO: Implement getExportFields() method.
+    }
 }
